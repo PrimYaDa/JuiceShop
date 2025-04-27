@@ -55,6 +55,7 @@ test.describe("Checkout flows", () => {
     // Fill address form
     await addressCreatePage.fillAddressForm();
     await addressCreatePage.submit();
+    await page.waitForTimeout(2000);
   });
 
   test("Login and checkout with 2 product", async ({ page }) => {
@@ -96,5 +97,6 @@ test.describe("Checkout flows", () => {
     // Fill address form
     await addressCreatePage.fillAddressForm();
     await addressCreatePage.submit();
+    await page.waitForTimeout(2000);
   });
 });
