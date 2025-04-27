@@ -1,4 +1,4 @@
-# Shop Tests
+# Juice Shop Tests
 
 This project contains automated Playwright tests for the [OWASP Juice Shop](https://juice-shop.herokuapp.com/) website.
 
