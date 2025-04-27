@@ -95,7 +95,7 @@ test.describe("Checkout flows", () => {
     await addressSelectPage.addNewAddress();
 
     // Fill address form
-    await addressCreatePage.fillAddressForm();
+    await addressCreatePage.fillAddressForm("Test User");
     await addressCreatePage.submit();
     await page.waitForTimeout(2000);
   });

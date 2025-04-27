@@ -3,14 +3,14 @@ import { Page } from "@playwright/test";
 export class AddressCreatePage {
   constructor(private page: Page) {}
 
-  async fillAddressForm() {
+  async fillAddressForm(name = "John Doe") {
     await this.page.fill(
       'input[placeholder="Please provide a country."]',
       "Testland"
     );
     await this.page.fill(
       'input[placeholder="Please provide a name."]',
-      "John Doe"
+      name
     );
     await this.page.fill(
       'input[placeholder="Please provide a mobile number."]',
